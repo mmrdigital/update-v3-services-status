@@ -21,7 +21,7 @@ interface EnvironmentConfig {
 }
 
 const v3ResolversPath =
-  "/Users/nicolasgomeztoua/Desktop/work/sy-backend-v3/packages/resolvers/src";
+  "";
 
 function parseResolverFile(filePath: string): ResolverInfo[] {
   const fileContent = fs.readFileSync(filePath, "utf-8");
