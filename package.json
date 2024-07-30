@@ -1,0 +1,19 @@
+{
+  "name": "updatenotion",
+  "version": "1.0.0",
+  "main": "servicesMigration.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.4"
+  }
+}

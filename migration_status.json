@@ -1,0 +1,350 @@
+{
+  "activeSessions": {
+    "name": "activeSessions",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "CalendarExport": {
+    "name": "CalendarExport",
+    "type": "unknown",
+    "operation": "unknown",
+    "status": "Deployed to Prod"
+  },
+  "communityCreate": {
+    "name": "communityCreate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "communityDelete": {
+    "name": "communityDelete",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "communityUpdate": {
+    "name": "communityUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "communitySearch": {
+    "name": "communitySearch",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "communityCategoryListSearch": {
+    "name": "communityCategoryListSearch",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "communityCategoryListUpdate": {
+    "name": "communityCategoryListUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "complaints": {
+    "name": "complaints",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "chatComplaint": {
+    "name": "chatComplaint",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "WeeklyStatsEmail": {
+    "name": "WeeklyStatsEmail",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Deployed to Prod"
+  },
+  "WeeklyStatsEmailTesting": {
+    "name": "WeeklyStatsEmailTesting",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Not Started"
+  },
+  "Email Sender": {
+    "name": "Email Sender",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Deployed to Prod"
+  },
+  "Email Sender Large Team": {
+    "name": "Email Sender Large Team",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Deployed to Prod"
+  },
+  "features": {
+    "name": "features",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "followerSetAdmin": {
+    "name": "followerSetAdmin",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "followerRemove": {
+    "name": "followerRemove",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "followerAdd": {
+    "name": "followerAdd",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "followerSearch": {
+    "name": "followerSearch",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "getMetadata": {
+    "name": "getMetadata",
+    "type": "unknown",
+    "operation": "unknown",
+    "status": "Deployed to Prod"
+  },
+  "ping": {
+    "name": "ping",
+    "type": "api",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "mem": {
+    "name": "mem",
+    "type": "api",
+    "operation": "mutation",
+    "status": "Deployed to Dev"
+  },
+  "static1": {
+    "name": "static1",
+    "type": "unknown",
+    "operation": "unknown",
+    "status": "Code Complete"
+  },
+  "Save Cached Stats": {
+    "name": "Save Cached Stats",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Deployed to Prod"
+  },
+  "Save Cached Session Logs": {
+    "name": "Save Cached Session Logs",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Deployed to Dev"
+  },
+  "No Lock Task": {
+    "name": "No Lock Task",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Code Complete"
+  },
+  "Concurrent tasks": {
+    "name": "Concurrent tasks",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Code Complete"
+  },
+  "Import Intercom User Location Data": {
+    "name": "Import Intercom User Location Data",
+    "type": "scheduled",
+    "operation": "task",
+    "status": "Deployed to Dev"
+  },
+  "piiRequests": {
+    "name": "piiRequests",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "piiRequestUpdate": {
+    "name": "piiRequestUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "plans": {
+    "name": "plans",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "planCreate": {
+    "name": "planCreate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "planUpdate": {
+    "name": "planUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "planTags": {
+    "name": "planTags",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "timelineChanged": {
+    "name": "timelineChanged",
+    "type": "api",
+    "operation": "subscription",
+    "status": "Deployed to Prod"
+  },
+  "redirects": {
+    "name": "redirects",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "redirectAdd": {
+    "name": "redirectAdd",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "redirectDelete": {
+    "name": "redirectDelete",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "redirectUpdate": {
+    "name": "redirectUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sponsorSearch": {
+    "name": "sponsorSearch",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "sponsorCreate": {
+    "name": "sponsorCreate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sponsorUpdate": {
+    "name": "sponsorUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sponsorDelete": {
+    "name": "sponsorDelete",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sponsorAdminSearch": {
+    "name": "sponsorAdminSearch",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "sponsorSetAdmin": {
+    "name": "sponsorSetAdmin",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sponsorAdminRemove": {
+    "name": "sponsorAdminRemove",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sponsorAdminAdd": {
+    "name": "sponsorAdminAdd",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "sportsSearch": {
+    "name": "sportsSearch",
+    "type": "admin",
+    "operation": "query",
+    "status": "Deployed to Prod"
+  },
+  "sportUpdate": {
+    "name": "sportUpdate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "login": {
+    "name": "login",
+    "type": "api",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "logout": {
+    "name": "logout",
+    "type": "api",
+    "operation": "mutation",
+    "status": "Deployed to Prod"
+  },
+  "userDetail": {
+    "name": "userDetail",
+    "type": "api",
+    "operation": "query",
+    "status": "Code Complete"
+  },
+  "user": {
+    "name": "user",
+    "type": "api",
+    "operation": "query",
+    "status": "Code Complete"
+  },
+  "userSearch": {
+    "name": "userSearch",
+    "type": "api",
+    "operation": "query",
+    "status": "Code Complete"
+  },
+  "userActivate": {
+    "name": "userActivate",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Deployed to Dev"
+  },
+  "userLock": {
+    "name": "userLock",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Code Complete"
+  },
+  "userUnlock": {
+    "name": "userUnlock",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Code Complete"
+  },
+  "userCreateAlias": {
+    "name": "userCreateAlias",
+    "type": "admin",
+    "operation": "mutation",
+    "status": "Code Complete"
+  }
+}
