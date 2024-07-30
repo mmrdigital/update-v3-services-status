@@ -1,6 +1,10 @@
 import { Client } from "@notionhq/client";
 import fs from "fs/promises";
 
+// Notion API configuration
+const NOTION_API_KEY = "";
+const NOTION_DATABASE_ID = "";
+
 const notion = new Client({ auth: NOTION_API_KEY });
 
 interface ResolverInfo {
@@ -73,6 +77,8 @@ function matchResolverType(
 
   if (resolverType.toLowerCase() === "api") {
     return normalizedNotionType === resolverOperation.toLowerCase();
+  } else if (resolverType.toLowerCase() === "admin") {
+    return normalizedNotionType === `admin${resolverOperation.toLowerCase()}`;
   } else {
     const normalizedResolverType =
       `${resolverType}${resolverOperation}`.toLowerCase();

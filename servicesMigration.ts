@@ -36,16 +36,25 @@ function parseResolverFile(filePath: string): ResolverInfo[] {
   const imports: { [key: string]: string } = {};
 
   function visit(node: ts.Node) {
-    if (ts.isImportDeclaration(node)) {
-      const importPath = node.moduleSpecifier.getText().replace(/['"]/g, "");
-      const importClause = node.importClause;
-      if (importClause && importClause.namedBindings) {
-        if (ts.isNamespaceImport(importClause.namedBindings)) {
-          const importName = importClause.namedBindings.name.getText();
-          imports[importName] = importPath;
-        }
-      }
-    }
+   if (ts.isImportDeclaration(node)) {
+     const importPath = node.moduleSpecifier.getText().replace(/['"]/g, "");
+     const importClause = node.importClause;
+     if (importClause) {
+       if (importClause.name) {
+         imports[importClause.name.text] = importPath;
+       }
+       if (importClause.namedBindings) {
+         if (ts.isNamespaceImport(importClause.namedBindings)) {
+           const importName = importClause.namedBindings.name.getText();
+           imports[importName] = importPath;
+         } else if (ts.isNamedImports(importClause.namedBindings)) {
+           importClause.namedBindings.elements.forEach((element) => {
+             imports[element.name.text] = importPath;
+           });
+         }
+       }
+     }
+   }
 
     if (ts.isObjectLiteralExpression(node)) {
       const resolverObjects = node.properties.filter(
@@ -95,8 +104,18 @@ function parseResolverObject(
           const fullName = prop.initializer.getText();
           name = fullName.split(".").pop()!;
           const importName = fullName.split(".")[0];
-          type = imports[importName]?.includes("@adminTypes") ? "admin" : "api";
+
+          // Check if the import is from @adminTypes
+          const isAdminType = Object.entries(imports).some(
+            ([key, value]) =>
+              key === importName && value.includes("@adminTypes")
+          );
+
+          type = isAdminType ? "admin" : "api";
           operation = determineOperation(fullName);
+        } else if (ts.isStringLiteral(prop.initializer)) {
+          // Handle cases where the name is a string literal
+          name = prop.initializer.text;
         }
       } else if (
         ts.isIdentifier(prop.name) &&
