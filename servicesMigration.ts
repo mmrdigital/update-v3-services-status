@@ -179,7 +179,7 @@ function determineStatus(
   if (envs.stage) return "Deployed to Stage";
   if (envs.dev) return "Deployed to Dev";
   if (envs.local) return "Code Complete";
-  return "Not Started"; // If environments exist but none are true, default to Not Started
+  return "In Progress"; // If environments exist but none are true, default to In Progress
 }
 
 export function generateResolverStatus(): ResolverStatus {
